@@ -38,7 +38,7 @@ def escrevendoPlacar(desvios):
     texto = font.render("Desvios:"+str(desvios), True, branco)
     display.blit(texto, (0, 0))
     
-def jogo():
+def jogo(): 
     pygame.mixer.music.load('jogo_Educativo/covidTrap.mp3')
     pygame.mixer.music.play(-1) # -1 é loopig infinito
     narizPosicaoX = largura * 0.45
