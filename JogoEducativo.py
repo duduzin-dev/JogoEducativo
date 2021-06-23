@@ -31,14 +31,14 @@ def message_display(text):
 def dead(desvios):
     pygame.mixer.Sound.play(espirroSound)
     pygame.mixer.music.stop()
-    message_display("Você Morreu com "+str(desvios)+" desvios")
+    message_display("Você contraiu covid =/")
 
 def escrevendoPlacar(desvios):
     font = pygame.font.SysFont(None, 25)
     texto = font.render("Desvios:"+str(desvios), True, branco)
     display.blit(texto, (0, 0))
     
-def jogo(): 
+def jogo():
     pygame.mixer.music.load('jogo_Educativo/covidTrap.mp3')
     pygame.mixer.music.play(-1) # -1 é loopig infinito
     narizPosicaoX = largura * 0.45
